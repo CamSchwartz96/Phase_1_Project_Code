@@ -240,3 +240,15 @@
     bottom: -35px;
     color: var(--clr-light);
   }
+
+  button {
+    background-color: rgb(158, 157, 157);
+    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    grid-area: lists;
+  }
