@@ -1,21 +1,36 @@
+:root {
+    --clr-primary: rgb(255, 255, 255);
+    --clr-light: rgb(158, 157, 157);
+    --clr-dark: rgb(0, 0, 0);
+    --clr-warning: rgb(255, 0, 0);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+
 html, body{
   display: grid;
+  font-family: "Work Sans", sans-serif;
   height: 100vh;
   width: 100%;
   place-items: center;
-  background: linear-gradient(to right, #fff 0%, #fff 100%);
+  background: linear-gradient(to right, var(--clr-primary) 0%, var(--clr-primary) 100%);
 }
 ::selection{
   background: #9d9e9f;
 
 }
 .container{
-  background: #fff;
+  background: var(--clr-primary);
   max-width: 350px;
   width: 100%;
   padding: 25px 30px;
   border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 10px var(--clr-dark);
 }
 .container form .title{
   font-size: 30px;
